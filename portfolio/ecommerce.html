@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ShopNova — E-Commerce Demo | Marshmallow Portfolio</title>
+<meta name="description" content="ShopNova — a full-featured e-commerce demo with cart, product grid, and checkout flow. A demo project by Marshmallow." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/shared.css">
+<link rel="stylesheet" href="css/ecommerce.css">
+<script defer src="js/shared.js"></script>
+<script defer src="js/ecommerce.js"></script>
+</head>
+<body id="page-ecommerce">
+<a class="skip-link" href="#ec-main">Skip to content</a>
+
+<nav class="ec-nav site-header">
+  <div class="logo">Shop<span>Nova</span></div>
+  <ul class="ec-nav-links">
+    <li><a href="#ec-home">Home</a></li><li><a href="#ec-shop">Shop</a></li><li><a href="#ec-categories">Categories</a></li><li><a href="#ec-deals">Deals</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <button class="cart-btn" type="button">🛒 Cart <span class="cart-count" id="ec-cartCount">0</span></button>
+    <button class="ec-hamburger" id="ec-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="ec-mobile-nav"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="ec-mobile-nav" id="ec-mobile-nav">
+  <button class="ec-mobile-nav-close" id="ec-nav-close" aria-label="Close menu">✕</button>
+  <a href="#ec-home">Home</a>
+  <a href="#ec-shop">Shop</a>
+  <a href="#ec-categories">Categories</a>
+  <a href="#ec-deals">Deals</a>
+</div>
+
+<main id="ec-main">
+  <section class="ec-hero" id="ec-home">
+    <div class="ec-hero-text">
+      <div class="hero-eyebrow">🔥 Summer Sale — Up to 60% Off</div>
+      <h1>Shop the <span>Future</span> of Style</h1>
+      <p>Discover thousands of premium products with lightning-fast delivery. Your next favourite thing is one click away.</p>
+      <div class="ec-btns"><button class="btn-main" type="button">Shop Now →</button><button class="btn-ghost" type="button">View Deals</button></div>
+    </div>
+  </section>
+  <section class="ec-categories" id="ec-categories">
+    <div class="ec-section-head"><h2>Shop by Category</h2><a href="#">See all →</a></div>
+    <div class="cat-grid">
+      <div class="cat-item"><div class="cat-icon">👟</div><div class="cat-name">Shoes</div></div>
+      <div class="cat-item"><div class="cat-icon">👕</div><div class="cat-name">Clothing</div></div>
+      <div class="cat-item"><div class="cat-icon">🎧</div><div class="cat-name">Electronics</div></div>
+      <div class="cat-item"><div class="cat-icon">💄</div><div class="cat-name">Beauty</div></div>
+      <div class="cat-item"><div class="cat-icon">🏠</div><div class="cat-name">Home</div></div>
+      <div class="cat-item"><div class="cat-icon">⚽</div><div class="cat-name">Sports</div></div>
+    </div>
+  </section>
+  <section class="ec-products" id="ec-shop">
+    <div class="ec-section-head"><h2>Trending Products</h2><a href="#">View all →</a></div>
+    <div class="prod-grid" id="ec-prodGrid"></div>
+  </section>
+  <div class="promo-banner" id="ec-deals">
+    <div><h2>Get 20% Off Your First Order</h2><p>Use code <strong>NOVA20</strong> at checkout.</p></div>
+    <span class="promo-emoji">🎉</span>
+    <button class="btn-main" type="button" id="ec-claimOffer">Claim Offer</button>
+  </div>
+</main>
+
+<footer>
+  <div class="ec-footer-grid">
+    <div class="ec-footer-brand"><h3>Shop<span>Nova</span></h3><p>Your one-stop destination for premium products delivered fast.</p></div>
+    <div class="ec-footer-col"><h4>Shop</h4><ul><li><a href="#">New Arrivals</a></li><li><a href="#">Best Sellers</a></li><li><a href="#">Sale Items</a></li></ul></div>
+    <div class="ec-footer-col"><h4>Help</h4><ul><li><a href="#">Track Order</a></li><li><a href="#">Returns</a></li><li><a href="#">Contact Us</a></li></ul></div>
+    <div class="ec-footer-col"><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Careers</a></li><li><a href="#">Blog</a></li></ul></div>
+  </div>
+  <div class="ec-footer-bottom">© 2026 ShopNova · A Marshmallow Dev Project</div>
+</footer>
+
+<nav id="switcher" aria-label="Project switcher">
+  <a class="sw-btn" href="index.html">🏠 Portfolio</a>
+  <a class="sw-btn ec active" href="ecommerce.html">🛒 ShopNova</a>
+  <a class="sw-btn uni" href="university.html">🎓 Nexus Uni</a>
+  <a class="sw-btn bnk" href="bank.html">💳 NovaPay</a>
+  <a class="sw-btn bar" href="barbershop.html">✂ Elite Cuts</a>
+  <a class="sw-btn rst" href="restaurant.html">🍽 Ember & Thyme</a>
+</nav>
+
+</body>
+</html>

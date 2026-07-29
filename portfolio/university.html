@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nexus University — Demo | Marshmallow Portfolio</title>
+<meta name="description" content="Nexus University — a demo university website with programs, admissions, and campus life sections. A demo project by Marshmallow." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,600&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/shared.css">
+<link rel="stylesheet" href="css/university.css">
+<script defer src="js/shared.js"></script>
+<script defer src="js/university.js"></script>
+</head>
+<body id="page-university">
+<a class="skip-link" href="#uni-main">Skip to content</a>
+
+<div class="topbar"><span>📧 admissions@nexus.edu | 📞 +1 800 NEXUS UNI</span><div class="topbar-links"><a href="#">Student Portal</a><a href="#">Alumni</a><a href="#">Library</a></div></div>
+<nav class="uni-nav site-header">
+  <div class="nav-brand"><div class="nav-crest">N</div><div class="nav-name">Nexus University<span>Est. 1892 · Excellence in Education</span></div></div>
+  <ul class="uni-nav-links"><li><a href="#uni-academics">Academics</a></li><li><a href="#uni-admissions">Admissions</a></li><li><a href="#uni-academics">Research</a></li><li><a href="#uni-campus-life">Campus Life</a></li></ul>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <a href="#" class="apply-btn">Apply Now</a>
+    <button class="uni-hamburger" id="uni-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="uni-mobile-nav"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="uni-mobile-nav" id="uni-mobile-nav">
+  <button class="uni-mobile-nav-close" id="uni-nav-close" aria-label="Close menu">✕</button>
+  <a href="#uni-academics">Academics</a>
+  <a href="#uni-admissions">Admissions</a>
+  <a href="#uni-academics">Research</a>
+  <a href="#uni-campus-life">Campus Life</a>
+  <a href="#" style="background:#c9a227;color:#0a1628;padding:12px 28px;border-radius:6px;font-size:14px;font-weight:700;">Apply Now</a>
+</div>
+
+<main id="uni-main">
+  <section class="uni-hero" id="uni-home">
+    <div class="uni-hero-content">
+      <div class="hero-badge">🏆 Ranked #1 in Research & Innovation 2025</div>
+      <h1>Shape the World<br/>Through <em>Knowledge</em></h1>
+      <p>Nexus University offers world-class education across 200+ programs. Join over 40,000 students building the future.</p>
+      <div class="uni-hero-actions"><button class="btn-gold" type="button">Explore Programs →</button><button class="btn-outline-gold" type="button">Campus Tour</button></div>
+      <div class="hero-stats">
+        <div><div class="h-stat-num">40K+</div><div class="h-stat-label">Students Enrolled</div></div>
+        <div><div class="h-stat-num">98%</div><div class="h-stat-label">Graduate Employment</div></div>
+        <div><div class="h-stat-num">200+</div><div class="h-stat-label">Programs Offered</div></div>
+        <div><div class="h-stat-num">133</div><div class="h-stat-label">Years of Excellence</div></div>
+      </div>
+    </div>
+  </section>
+  <div class="announcements" id="uni-admissions"><span class="ann-label">📢 NEWS</span><p class="ann-ticker">Spring 2026 Applications open — Deadline: March 15 &nbsp;|&nbsp; New Engineering Research Centre opens September &nbsp;|&nbsp; Nexus ranked top 50 globally by QS</p></div>
+  <section class="uni-programs" id="uni-academics">
+    <div class="uni-section-label">Academic Excellence</div>
+    <div class="uni-section-title">Explore Our <em>Programs</em></div>
+    <div class="prog-grid">
+      <div class="prog-card"><div class="prog-icon">💻</div><h3>Computer Science & AI</h3><p>Algorithms, machine learning, and software systems. Be the builder of tomorrow's technology.</p><div class="prog-meta"><span>🎓 BSc / MSc</span><span>⏱ 3-4 Years</span></div><div class="prog-link">Explore →</div></div>
+      <div class="prog-card"><div class="prog-icon">⚖️</div><h3>Law & Political Science</h3><p>Study justice, governance, and global policy. Graduates serve in leading firms and governments.</p><div class="prog-meta"><span>🎓 LLB / MA</span><span>⏱ 3-5 Years</span></div><div class="prog-link">Explore →</div></div>
+      <div class="prog-card"><div class="prog-icon">🏥</div><h3>Medicine & Health Sciences</h3><p>Train with world-class clinicians in our state-of-the-art teaching hospital.</p><div class="prog-meta"><span>🎓 MBBS / PhD</span><span>⏱ 5-6 Years</span></div><div class="prog-link">Explore →</div></div>
+      <div class="prog-card"><div class="prog-icon">📈</div><h3>Business & Economics</h3><p>Strategy, finance, and entrepreneurship. Build ventures and lead organisations from day one.</p><div class="prog-meta"><span>🎓 BBA / MBA</span><span>⏱ 3-4 Years</span></div><div class="prog-link">Explore →</div></div>
+      <div class="prog-card"><div class="prog-icon">🏗️</div><h3>Architecture & Design</h3><p>Blend creativity with technical precision. Design spaces that inspire and stand the test of time.</p><div class="prog-meta"><span>🎓 BArch</span><span>⏱ 5 Years</span></div><div class="prog-link">Explore →</div></div>
+      <div class="prog-card"><div class="prog-icon">🔬</div><h3>Natural Sciences</h3><p>Physics to biochemistry — explore how the universe works and lead research that changes everything.</p><div class="prog-meta"><span>🎓 BSc / PhD</span><span>⏱ 3-4 Years</span></div><div class="prog-link">Explore →</div></div>
+    </div>
+  </section>
+  <section class="why-us" id="uni-campus-life">
+    <div class="uni-section-label">Why Nexus</div>
+    <div class="uni-section-title">Why Students Choose <em>Us</em></div>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-icon">🌍</div><h4>Global Network</h4><p>Connect with alumni and partners in 120+ countries.</p></div>
+      <div class="why-card"><div class="why-icon">🔬</div><h4>Research-Led Teaching</h4><p>Learn from academics leading cutting-edge research.</p></div>
+      <div class="why-card"><div class="why-icon">🏛️</div><h4>Historic Campus</h4><p>300-acre campus blending heritage and modern facilities.</p></div>
+      <div class="why-card"><div class="why-icon">💰</div><h4>Generous Scholarships</h4><p>Over $50M in scholarships awarded annually.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="uni-footer">
+  <div class="uni-footer-top">
+    <div class="uni-footer-brand"><div class="uni-footer-brand-name">Nexus University</div><p>Empowering generations of thinkers, innovators, and leaders since 1892.</p></div>
+    <div class="uni-footer-col"><h5>Academics</h5><ul><li><a href="#">Undergraduate</a></li><li><a href="#">Postgraduate</a></li><li><a href="#">PhD Programs</a></li></ul></div>
+    <div class="uni-footer-col"><h5>Campus</h5><ul><li><a href="#">Student Life</a></li><li><a href="#">Accommodation</a></li><li><a href="#">Sports & Clubs</a></li></ul></div>
+    <div class="uni-footer-col"><h5>Contact</h5><ul><li><a href="#">admissions@nexus.edu</a></li><li><a href="#">+1 800 NEXUS UNI</a></li></ul></div>
+  </div>
+  <div class="uni-footer-bottom">© 2026 Nexus University · A Marshmallow Dev Project</div>
+</footer>
+
+<nav id="switcher" aria-label="Project switcher">
+  <a class="sw-btn" href="index.html">🏠 Portfolio</a>
+  <a class="sw-btn ec" href="ecommerce.html">🛒 ShopNova</a>
+  <a class="sw-btn uni active" href="university.html">🎓 Nexus Uni</a>
+  <a class="sw-btn bnk" href="bank.html">💳 NovaPay</a>
+  <a class="sw-btn bar" href="barbershop.html">✂ Elite Cuts</a>
+  <a class="sw-btn rst" href="restaurant.html">🍽 Ember & Thyme</a>
+</nav>
+
+</body>
+</html>

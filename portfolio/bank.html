@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NovaPay — Banking App Demo | Marshmallow Portfolio</title>
+<meta name="description" content="NovaPay — a modern digital banking landing page demo with account overview, transfers, and security features. A demo project by Marshmallow." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/shared.css">
+<link rel="stylesheet" href="css/bank.css">
+<script defer src="js/shared.js"></script>
+<script defer src="js/bank.js"></script>
+</head>
+<body id="page-bank">
+<a class="skip-link" href="#bnk-main">Skip to content</a>
+
+<nav class="bnk-nav site-header">
+  <div class="bnk-logo">Nova<span>Pay</span></div>
+  <ul class="bnk-nav-links"><li><a href="#bnk-personal">Personal</a></li><li><a href="#bnk-features">Business</a></li><li><a href="#bnk-features">Cards</a></li><li><a href="#bnk-personal">Security</a></li></ul>
+  <div class="bnk-nav-btns">
+    <button class="btn-bnk-text" type="button">Sign In</button>
+    <button class="btn-bnk-primary" type="button">Open Account</button>
+    <button class="bnk-hamburger" id="bnk-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="bnk-mobile-nav"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="bnk-mobile-nav" id="bnk-mobile-nav">
+  <button class="bnk-mobile-nav-close" id="bnk-nav-close" aria-label="Close menu">✕</button>
+  <a href="#bnk-personal">Personal</a>
+  <a href="#bnk-features">Business</a>
+  <a href="#bnk-features">Cards</a>
+  <a href="#bnk-personal">Security</a>
+  <a href="#" style="background:linear-gradient(135deg,#0070f3,#00d4ff);color:#fff;padding:12px 28px;border-radius:8px;font-weight:600;">Open Account</a>
+</div>
+
+<main id="bnk-main">
+  <section class="bnk-hero" id="bnk-personal">
+    <div class="bnk-hero-bg"><div class="bnk-glow1"></div><div class="bnk-glow2"></div><div class="bnk-grid-lines"></div></div>
+    <div class="bnk-hero-inner">
+      <div>
+        <div class="bnk-eyebrow"><span class="bnk-dot"></span> Fully Licensed & Regulated</div>
+        <h1>Banking That <span class="bnk-grad">Moves</span> With You</h1>
+        <p>Open a free account in 3 minutes. Send money globally, earn high interest, and manage everything from your phone.</p>
+        <div class="bnk-hero-cta"><button class="btn-bnk-hero" type="button">Get Started Free →</button><button class="btn-bnk-ghost" type="button">Watch Demo</button></div>
+        <div class="bnk-features-list">
+          <div class="bnk-feat-item"><span class="bnk-check">✓</span> No monthly fees</div>
+          <div class="bnk-feat-item"><span class="bnk-check">✓</span> 4.5% APY savings</div>
+          <div class="bnk-feat-item"><span class="bnk-check">✓</span> Instant transfers</div>
+        </div>
+      </div>
+      <div class="bnk-card-visual">
+        <div class="bnk-card-3d">
+          <div class="bnk-card-bank"><span class="bnk-card-logo">NovaPay</span><span class="bnk-card-type">PLATINUM</span></div>
+          <div class="bnk-chip"></div>
+          <div class="bnk-card-number">4291 •••• •••• 8847</div>
+          <div class="bnk-card-footer">
+            <div class="bnk-card-holder"><span>Card Holder</span><strong>MARSHMALLOW DEV</strong></div>
+            <div class="bnk-card-expiry"><span>Expires</span><strong>09/28</strong></div>
+          </div>
+        </div>
+        <div class="bnk-floating-stats">
+          <div class="bnk-float-stat"><div class="bnk-fs-label">Balance</div><div class="bnk-fs-value cyan">$24,391.50</div></div>
+          <div class="bnk-float-stat"><div class="bnk-fs-label">This Month</div><div class="bnk-fs-value green">+$3,240</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bnk-features-section" id="bnk-features">
+    <div class="bnk-feats-header">
+      <div class="bnk-section-label">What We Offer</div>
+      <h2>Everything You Need in One App</h2>
+      <p>Powerful features designed for how you actually live and spend your money.</p>
+    </div>
+    <div class="bnk-feats-grid">
+      <div class="bnk-feat-card"><div class="bnk-feat-icon">💸</div><h3>Instant Transfers</h3><p>Send money to anyone in seconds. Domestic or international, we move fast.</p></div>
+      <div class="bnk-feat-card"><div class="bnk-feat-icon">📈</div><h3>High-Yield Savings</h3><p>Earn 4.5% APY — 10x the national average. Your money grows while you sleep.</p></div>
+      <div class="bnk-feat-card"><div class="bnk-feat-icon">💳</div><h3>Smart Cards</h3><p>Virtual and physical cards with real-time spend controls. Freeze and set limits instantly.</p></div>
+      <div class="bnk-feat-card"><div class="bnk-feat-icon">🌍</div><h3>Global Payments</h3><p>Pay and receive in 50+ currencies at mid-market exchange rates. No markups.</p></div>
+      <div class="bnk-feat-card"><div class="bnk-feat-icon">📊</div><h3>Smart Budgeting</h3><p>AI-powered insights categorise your spending and help you hit your savings goals.</p></div>
+      <div class="bnk-feat-card"><div class="bnk-feat-icon">🏦</div><h3>Business Accounts</h3><p>Invoicing, payroll, and multi-user access for teams. Run everything in one place.</p></div>
+    </div>
+  </section>
+  <section class="bnk-cta">
+    <div class="bnk-cta-inner">
+      <h2>Ready to Bank Smarter?</h2>
+      <p>Join over 2 million customers. Open your account in 3 minutes.</p>
+      <div class="bnk-cta-btns"><button class="btn-bnk-hero" type="button">Open Free Account →</button><button class="btn-bnk-ghost" type="button">Compare Plans</button></div>
+    </div>
+  </section>
+</main>
+
+<footer class="bnk-footer">
+  <div class="bnk-footer-row">
+    <div class="bnk-footer-brand"><div class="bnk-footer-logo">Nova<span>Pay</span></div><p>Modern banking built for real life. Fast, safe, and always free to start.</p></div>
+    <div class="bnk-footer-col"><h5>Products</h5><ul><li><a href="#">Personal</a></li><li><a href="#">Business</a></li><li><a href="#">Savings</a></li></ul></div>
+    <div class="bnk-footer-col"><h5>Legal</h5><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Use</a></li></ul></div>
+    <div class="bnk-footer-col"><h5>Support</h5><ul><li><a href="#">Help Centre</a></li><li><a href="#">Contact Us</a></li></ul></div>
+  </div>
+  <div class="bnk-footer-bottom"><span>© 2026 NovaPay Financial · A Marshmallow Dev Project</span><span>Demo purposes only.</span></div>
+</footer>
+
+<nav id="switcher" aria-label="Project switcher">
+  <a class="sw-btn" href="index.html">🏠 Portfolio</a>
+  <a class="sw-btn ec" href="ecommerce.html">🛒 ShopNova</a>
+  <a class="sw-btn uni" href="university.html">🎓 Nexus Uni</a>
+  <a class="sw-btn bnk active" href="bank.html">💳 NovaPay</a>
+  <a class="sw-btn bar" href="barbershop.html">✂ Elite Cuts</a>
+  <a class="sw-btn rst" href="restaurant.html">🍽 Ember & Thyme</a>
+</nav>
+
+</body>
+</html>

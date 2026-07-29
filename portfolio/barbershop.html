@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Elite Cuts — Barbershop Demo | Marshmallow Portfolio</title>
+<meta name="description" content="Elite Cuts — a stylish barbershop website demo with services, booking form, and gallery. A demo project by Marshmallow." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/shared.css">
+<link rel="stylesheet" href="css/barbershop.css">
+<script defer src="js/shared.js"></script>
+<script defer src="js/barbershop.js"></script>
+</head>
+<body id="page-barbershop">
+<a class="skip-link" href="#bar-main">Skip to content</a>
+
+<nav class="bar-nav site-header">
+  <div class="bar-logo">ELITE<span>CUTS</span></div>
+  <ul class="bar-nav-links"><li><a href="#bar-services">Services</a></li><li><a href="#bar-booking">Barbers</a></li><li><a href="#bar-services">Gallery</a></li><li><a href="#bar-contact">Contact</a></li></ul>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <button class="bar-book-nav" type="button" data-scroll-to="bar-booking">Book Now</button>
+    <button class="bar-hamburger" id="bar-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="bar-mobile-nav"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="bar-mobile-nav" id="bar-mobile-nav">
+  <button class="bar-mobile-nav-close" id="bar-nav-close" aria-label="Close menu">✕</button>
+  <a href="#bar-services">Services</a>
+  <a href="#bar-booking">Barbers</a>
+  <a href="#bar-services">Gallery</a>
+  <a href="#bar-contact">Contact</a>
+  <a href="#bar-booking" data-scroll-to="bar-booking" style="background:#c9a227;color:#000;padding:12px 28px;letter-spacing:2px;font-weight:700;text-transform:uppercase;">Book Now</a>
+</div>
+
+<main id="bar-main">
+  <section class="bar-hero">
+    <div class="bar-stripe"></div>
+    <div class="bar-diagonal"></div>
+    <div class="bar-hero-content">
+      <div class="bar-est">— Est. 2010 · Premium Barbershop —</div>
+      <h1>ELITE<span>CUTS</span></h1>
+      <p class="bar-tagline">"Where Every Cut Tells a Story of Perfection."</p>
+      <div class="bar-hero-cta">
+        <button class="btn-bar-gold" type="button" data-scroll-to="bar-booking">Book Appointment</button>
+        <button class="btn-bar-outline" type="button" data-scroll-to="bar-services">Our Services</button>
+      </div>
+    </div>
+  </section>
+  <section class="bar-services" id="bar-services">
+    <div class="bar-section-eyebrow">What We Do</div>
+    <div class="bar-section-title">OUR SERVICES</div>
+    <div class="bar-services-grid">
+      <div class="bar-service-card"><div class="bar-service-num">01</div><h3>Classic Cut</h3><p>Timeless haircut tailored to your face shape. Includes consultation, shampoo, and style.</p><div class="bar-service-price">$30 <span>/ 45 mins</span></div></div>
+      <div class="bar-service-card"><div class="bar-service-num">02</div><h3>Fade & Taper</h3><p>Precision skin fade to medium taper. The signature Elite Cuts technique that defines us.</p><div class="bar-service-price">$40 <span>/ 50 mins</span></div></div>
+      <div class="bar-service-card"><div class="bar-service-num">03</div><h3>Beard Trim & Shape</h3><p>Sculpted beard lines, hot towel prep, and premium beard oil finishing treatment.</p><div class="bar-service-price">$25 <span>/ 30 mins</span></div></div>
+      <div class="bar-service-card"><div class="bar-service-num">04</div><h3>Cut + Beard Combo</h3><p>The full package. Cut, fade, beard shape, and hot towel treatment. The works.</p><div class="bar-service-price">$60 <span>/ 75 mins</span></div></div>
+      <div class="bar-service-card"><div class="bar-service-num">05</div><h3>Kids Cut</h3><p>Gentle, patient cuts for the little ones. Fun and stress-free experience guaranteed.</p><div class="bar-service-price">$20 <span>/ 30 mins</span></div></div>
+      <div class="bar-service-card"><div class="bar-service-num">06</div><h3>VIP Experience</h3><p>Priority booking, champagne, premium cut, beard, scalp massage. Total luxury.</p><div class="bar-service-price">$100 <span>/ 90 mins</span></div></div>
+    </div>
+  </section>
+  <section class="bar-booking" id="bar-booking">
+    <div class="bar-booking-grid">
+      <div class="bar-booking-info">
+        <div class="bar-section-eyebrow">Reserve Your Seat</div>
+        <div class="bar-section-title">BOOK YOUR<br/>APPOINTMENT</div>
+        <p>Walk-ins welcome, but book ahead to secure your preferred barber and time slot.</p>
+        <div class="hours-list">
+          <div class="hour-row today"><span class="day">Friday (Today)</span><span class="time">9:00 AM – 8:00 PM</span></div>
+          <div class="hour-row"><span class="day">Saturday</span><span class="time">8:00 AM – 6:00 PM</span></div>
+          <div class="hour-row"><span class="day">Sunday</span><span class="time">10:00 AM – 4:00 PM</span></div>
+          <div class="hour-row"><span class="day">Mon – Thu</span><span class="time">9:00 AM – 7:00 PM</span></div>
+        </div>
+      </div>
+      <div class="bar-booking-form">
+        <h3>BOOK A CUT</h3>
+        <div class="bar-form-group"><label for="bar-name">Your Name</label><input id="bar-name" type="text" placeholder="John Doe"/></div>
+        <div class="bar-form-group"><label for="bar-phone">Phone Number</label><input id="bar-phone" type="tel" placeholder="+1 555 000 0000"/></div>
+        <div class="bar-form-group"><label for="bar-service">Select Service</label><select id="bar-service"><option>Classic Cut — $30</option><option>Fade & Taper — $40</option><option>Beard Trim — $25</option><option>Cut + Beard Combo — $60</option><option>VIP Experience — $100</option></select></div>
+        <div class="bar-form-group"><label for="bar-date">Preferred Date</label><input id="bar-date" type="date"/></div>
+        <div class="bar-form-group"><label for="bar-barber">Preferred Barber</label><select id="bar-barber"><option>No Preference</option><option>Marcus King</option><option>Jordan Cole</option><option>Alex Brooks</option></select></div>
+        <button class="bar-book-submit" type="button" id="bar-bookSubmit">CONFIRM BOOKING</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bar-footer" id="bar-contact">
+  <div class="bar-footer-inner">
+    <div class="bar-footer-brand"><div class="bar-footer-brand-name">ELITE<span>CUTS</span></div><p>Premium barbershop experience since 2010. Where every client leaves looking their best.</p></div>
+    <div class="bar-footer-col"><h5>Services</h5><ul><li><a href="#">Classic Cut</a></li><li><a href="#">Fade & Taper</a></li><li><a href="#">Beard Trim</a></li><li><a href="#">VIP Package</a></li></ul></div>
+    <div class="bar-footer-col"><h5>Visit Us</h5><ul><li><a href="#">123 Main Street</a></li><li><a href="#">New York, NY</a></li><li><a href="#">+1 (555) 123-4567</a></li></ul></div>
+    <div class="bar-footer-col"><h5>Follow</h5><ul><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li><li><a href="#">Facebook</a></li></ul></div>
+  </div>
+  <div class="bar-footer-bottom">© 2026 Elite Cuts Barbershop · A Marshmallow Dev Project</div>
+</footer>
+
+<nav id="switcher" aria-label="Project switcher">
+  <a class="sw-btn" href="index.html">🏠 Portfolio</a>
+  <a class="sw-btn ec" href="ecommerce.html">🛒 ShopNova</a>
+  <a class="sw-btn uni" href="university.html">🎓 Nexus Uni</a>
+  <a class="sw-btn bnk" href="bank.html">💳 NovaPay</a>
+  <a class="sw-btn bar active" href="barbershop.html">✂ Elite Cuts</a>
+  <a class="sw-btn rst" href="restaurant.html">🍽 Ember & Thyme</a>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* =============================================
+   SHARED / GLOBAL STYLES
+   Used on every page — reset + the floating
+   "project switcher" navigation bar.
+============================================= */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Skip link (accessibility) ---- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #7c5cfc;
+  color: #fff;
+  padding: 12px 20px;
+  z-index: 100000;
+  border-radius: 0 0 8px 0;
+}
+.skip-link:focus { left: 0; }
+
+/* ---- Project switcher bar ---- */
+#switcher {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  max-width: calc(100vw - 16px);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  background: rgba(10,10,18,0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 60px;
+  padding: 6px 8px;
+  display: flex;
+  gap: 4px;
+  justify-content: flex-start;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.04);
+}
+#switcher::-webkit-scrollbar { display: none; }
+
+#switcher .sw-btn {
+  padding: 9px 18px;
+  border-radius: 50px;
+  border: none;
+  background: transparent;
+  color: rgba(255,255,255,0.45);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+#switcher .sw-btn:hover { color: rgba(255,255,255,0.8); background: rgba(255,255,255,0.06); }
+#switcher .sw-btn:visited { color: rgba(255,255,255,0.45); }
+#switcher .sw-btn:visited:hover { color: rgba(255,255,255,0.8); }
+#switcher .sw-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+#switcher .sw-btn.active {
+  background: linear-gradient(135deg, #7c5cfc, #c471ed);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(124,92,252,0.5);
+}
+#switcher .sw-btn.active.ec  { background: linear-gradient(135deg,#6c3fff,#ff3fa4); box-shadow:0 2px 12px rgba(108,63,255,0.5); }
+#switcher .sw-btn.active.uni { background: linear-gradient(135deg,#0f1f3d,#c9a227); box-shadow:0 2px 12px rgba(201,162,39,0.4); }
+#switcher .sw-btn.active.bnk { background: linear-gradient(135deg,#0070f3,#00d4ff); box-shadow:0 2px 12px rgba(0,112,243,0.5); }
+#switcher .sw-btn.active.bar { background: linear-gradient(135deg,#1a1200,#c9a227); box-shadow:0 2px 12px rgba(201,162,39,0.4); }
+#switcher .sw-btn.active.rst { background: linear-gradient(135deg,#e8651a,#f59c3a); box-shadow:0 2px 12px rgba(232,101,26,0.5); }
+
+@media (max-width: 600px) {
+  #switcher {
+    bottom: 10px; left: 8px; right: 8px;
+    transform: none; border-radius: 14px;
+    padding: 4px 5px; gap: 2px;
+    justify-content: flex-start;
+  }
+  #switcher .sw-btn { padding: 7px 11px; font-size: 10.5px; }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ember & Thyme — Restaurant Demo | Marshmallow Portfolio</title>
+<meta name="description" content="Ember & Thyme — an elegant restaurant website demo with menu, reservations, and chef profiles. A demo project by Marshmallow." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/shared.css">
+<link rel="stylesheet" href="css/restaurant.css">
+<script defer src="js/shared.js"></script>
+<script defer src="js/restaurant.js"></script>
+</head>
+<body id="page-restaurant">
+<a class="skip-link" href="#rst-main">Skip to content</a>
+
+<nav class="rst-nav site-header">
+  <div class="rst-logo">Ember <span>&</span> Thyme</div>
+  <ul class="rst-nav-links"><li><a href="#rst-menu">Menu</a></li><li><a href="#rst-about">About</a></li><li><a href="#rst-info">Private Dining</a></li><li><a href="#rst-info">Wine</a></li></ul>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <button class="rst-reserve-nav" type="button" data-scroll-to="rst-reservation">Reserve</button>
+    <button class="rst-hamburger" id="rst-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="rst-mobile-nav"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="rst-mobile-nav" id="rst-mobile-nav">
+  <button class="rst-mobile-nav-close" id="rst-nav-close" aria-label="Close menu">✕</button>
+  <a href="#rst-menu">Menu</a>
+  <a href="#rst-about">About</a>
+  <a href="#rst-info">Private Dining</a>
+  <a href="#rst-info">Wine</a>
+  <a href="#rst-reservation" data-scroll-to="rst-reservation" style="border:1.5px solid #e8651a;color:#e8651a;padding:12px 28px;letter-spacing:2px;font-weight:600;text-transform:uppercase;">Reserve</a>
+</div>
+
+<main id="rst-main">
+  <section class="rst-hero" id="rst-about">
+    <div class="rst-hero-bg"></div>
+    <div class="rst-hero-texture"></div>
+    <div class="rst-hero-plate" aria-hidden="true">🔥</div>
+    <div class="rst-hero-content">
+      <div class="rst-award">🏅 Michelin Recommended · 2024 & 2025</div>
+      <h1>Where Fire<em>Meets Flavour</em></h1>
+      <div class="rst-divider"><span>🌿</span></div>
+      <p>An intimate dining experience rooted in open-flame cooking and seasonal ingredients. Chef-driven cuisine crafted with passion, plated with precision.</p>
+      <div class="rst-hero-btns">
+        <button class="btn-rst-orange" type="button" data-scroll-to="rst-reservation">Reserve a Table</button>
+        <button class="btn-rst-ghost" type="button" data-scroll-to="rst-menu">Explore Menu</button>
+      </div>
+      <div class="rst-hero-info">
+        <div class="rst-hi-item"><strong>Tue – Sun</strong><span>Dinner from 6 PM</span></div>
+        <div class="rst-hi-item"><strong>Friday Lunch</strong><span>12 PM – 3 PM</span></div>
+        <div class="rst-hi-item"><strong>Private Events</strong><span>On Request</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="rst-menu-section" id="rst-menu">
+    <div class="rst-menu-header">
+      <div><div class="rst-section-eyebrow">Our Cuisine</div><div class="rst-section-title">Signature <em>Dishes</em></div></div>
+      <div class="rst-menu-tabs">
+        <button class="rst-menu-tab active" type="button" data-cat="starters">Starters</button>
+        <button class="rst-menu-tab" type="button" data-cat="mains">Mains</button>
+        <button class="rst-menu-tab" type="button" data-cat="desserts">Desserts</button>
+      </div>
+    </div>
+    <div class="rst-menu-grid" id="rst-menuGrid"></div>
+  </section>
+  <section class="rst-reservation" id="rst-reservation">
+    <div class="rst-res-inner">
+      <div class="rst-section-eyebrow">Reserve</div>
+      <div class="rst-section-title">Book Your <em>Table</em></div>
+      <p>We recommend booking at least 3 days in advance. For groups of 8+, please call us directly.</p>
+      <div class="rst-res-form">
+        <div class="rst-form-row"><div class="rst-form-group"><label for="rst-fname">First Name</label><input id="rst-fname" type="text" placeholder="James"/></div><div class="rst-form-group"><label for="rst-lname">Last Name</label><input id="rst-lname" type="text" placeholder="Campbell"/></div></div>
+        <div class="rst-form-row"><div class="rst-form-group"><label for="rst-date">Date</label><input id="rst-date" type="date"/></div><div class="rst-form-group"><label for="rst-time">Time</label><select id="rst-time"><option>6:00 PM</option><option>7:00 PM</option><option>7:30 PM</option><option>8:00 PM</option><option>8:30 PM</option><option>9:00 PM</option></select></div></div>
+        <div class="rst-form-row"><div class="rst-form-group"><label for="rst-guests">Guests</label><select id="rst-guests"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>8+</option></select></div><div class="rst-form-group"><label for="rst-occasion">Occasion</label><select id="rst-occasion"><option>None</option><option>Birthday</option><option>Anniversary</option><option>Business Dinner</option><option>Proposal</option></select></div></div>
+        <div class="rst-form-group"><label for="rst-requests">Special Requests</label><textarea id="rst-requests" rows="3" placeholder="Dietary requirements, allergies, special setup..."></textarea></div>
+        <button class="rst-res-submit" type="button" id="rst-reserveSubmit">Confirm Reservation</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rst-footer" id="rst-info">
+  <div class="rst-footer-grid">
+    <div class="rst-footer-brand"><div class="rst-footer-logo">Ember <span>&</span> Thyme</div><p>An intimate fine dining experience rooted in live-fire cooking and seasonal ingredients.</p></div>
+    <div class="rst-footer-col"><h5>Menu</h5><ul><li><a href="#">Starters</a></li><li><a href="#">Mains</a></li><li><a href="#">Desserts</a></li><li><a href="#">Wine List</a></li></ul></div>
+    <div class="rst-footer-col"><h5>Visit</h5><ul><li><a href="#">Tue–Sun: 6–10 PM</a></li><li><a href="#">12 Hearth Lane, NY</a></li><li><a href="#">+1 (212) 555-0190</a></li></ul></div>
+    <div class="rst-footer-col"><h5>Connect</h5><ul><li><a href="#">Instagram</a></li><li><a href="#">Private Events</a></li><li><a href="#">Gift Cards</a></li></ul></div>
+  </div>
+  <div class="rst-footer-bottom">© 2026 Ember & Thyme · A Marshmallow Dev Project</div>
+</footer>
+
+<nav id="switcher" aria-label="Project switcher">
+  <a class="sw-btn" href="index.html">🏠 Portfolio</a>
+  <a class="sw-btn ec" href="ecommerce.html">🛒 ShopNova</a>
+  <a class="sw-btn uni" href="university.html">🎓 Nexus Uni</a>
+  <a class="sw-btn bnk" href="bank.html">💳 NovaPay</a>
+  <a class="sw-btn bar" href="barbershop.html">✂ Elite Cuts</a>
+  <a class="sw-btn rst active" href="restaurant.html">🍽 Ember & Thyme</a>
+</nav>
+
+</body>
+</html>
